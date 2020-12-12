@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<title>Hisham UICC</title>
+</head>	
+<body>
+	<h1>(e)UICC Telecommunication Projects / Tests <i style="font-size:15px">-with no order</i></h1>
+	<p style="color:red;"><i style="font-size:30px">Part of my day-to-day job is to fully build and test to MNO, MVNO, OEM and M2M companies, from A to Z, (e)UICC profiles based on 2G, 3G, LTE only, LTE AOTA, M2M, M2M AOTA, M2M 5G, M2M 5G AOTA, 5G, or 5G AOTA technologies. There are a lot of sophisticated tests I perform. Here I list only a few for demonstration.</i></p>
+	<h2><i style="font-size:15px">key words: </i>Smart Cards | M(V)NO | (e)UICC | (e)SIM | M2M | CE</h2>
+	<h4>Project name: Over the Air (OTA)</h4>
+	<p>•Objective: Testing the OTA Remote File Management (RFM) and Remote Application Management (RAM) •Results: I ensure the cryptography for OTA over SMS algorithm and key length are using AES or 3DES 16 bytes/3DES 24 bytes and HTTPS TLS 1.2/1.0 protocol for OTA over HTTPS (SCP81). Also, I ensure OTA-able applets are located in independent security domains. Next, OTA keysets (KIC & KID) lengths and indexes are analyzed, along with TARs, access domain and security levels. After that, RFM and RAM are tested by sending envelopes (update file/install applet) with correct security settings during a STK session via an OTA platform. Consequently, proof of receipts (POR) are checked, and files get updated/applets get installed.</p>
+		</br>
+	<h4>Project name: Security Data of SIM/M2M Cards</h4>
+	<p>•Objective: Assuring That SIM/M2M Cards are Compliant with the Security Guidelines •Results: I approve that the authentication and key agreement algorithms are using GSM Milenage (COMP123-4), counters’ attempts for CHVs (PINs) and PUKs are set to 0x03 and 0x0A, respectively, file system access rights are mapped on appropriate PIN/ADM codes, keysets (i.e. ADMs, KLA, KIC, KID, KIK, and Ki) are properly diversified or randomly generated card by card, telco keysets provided by MNOs/MVNOs are encrypted with a symmetric encryption and, finally, cards’ states are set to locked, OP_SECURED.</p>	
+		</br>
+	<h4>Project name: Logs and Traces Analysis of SIM/M2M Data</h4>
+	<p>•Objective: Analyzing of Logs and Traces for Different Scenarios and Different Files’ Extensions •Results: I analyze and read plenty of logs and traces received by MNOs/MVNOs for failures in: network authentication, OTA commands, STK sessions, and more. Logs I receive, mostly, use APDU commands with file extensions *.xml or *.atf, and I need to read and study the logs to figure out the root causes of issues (i.e. improper key usage, wrong TAR, wrong IMSI…etc).</p>	
+		</br>
+	<h4>Project name: Network Authentication for MNOs</h4>
+	<p>•Objective: Verifying of Successful Authentications Between SIM/Handset and Home Subscriber Service (HSS) •Results: First, I verify 2G/3G key properties (Ki, Op and Opc), IMSI values, and ICCID values. Second, a SIM is inserted into a handset. If an authentication counter is present, I check that its value is incremented, and elementary files: LOCI, GPRSLOCI, and PSLOCI are updated, stating normal operation. Third, SMS and calls are tested. Finally, when data is available, an initiation of www session is performed.</p>	
+		</br>
+	<h4>Project name: SIM/M2M Applications for MNOs/MVNOs</h4>
+	<p>•Objective: Making Certain That All Toolkit, Applets, Filter, Softmask, and Plug-In Are Properly Configured •Results: I assess that all applications’ AIDs are listed in EF_DIR and their applicative keys are in a dedicated security domain or in a ciphered elementary file (EF). Next, WIB/S@T menu, OTA specific functionalities, and push/pull are verified. Then, STK application positions and behavior are simulated through the navigation of the complete application tree. Finally, Store Data and Install for Install commands are validated outside SIM file system and key repositories.</p>	
+		</br>
+	<h4>Project name: Retrieve and Exchange of SIM/M2M Data</h4>
+	<p>•Objective: Retrieving Memory Sizes and ATR, and Exchanging Data Securely •Results: I extract sizes of EEPROM, RAM, profile (MF), applications, keysets, and left-root for SIM/M2M cards. Next, I retrieve the answer to reset (ATR), supported voltage (TA3 value), and PPS (TA1 values). Finally, exchanges of sensitive data with MNOs are performed through a secured FTP protocol channel and Pretty Good Privacy (PGP) encryption.</p>	
+		</br>
+	<h4>Project name: Telecom and GSM Functional Tests</h4>
+	<p>•Objective: Confirming That All Elementary Files in Telecom and GSM Directory Files (DFs) are Functional •Results: Using simulators and 2G/3G handsets with an active SIM: For Telecom DF, assessments are performed on SMS, SMSC, Phonebook Management, FDN, LND, BDN, SDN, MSISDN. For GSM DF, assessments are performed on LP, PLMN, FPLMN, SPN, SST, and CBMI.</p>	
+		</br>
+	<h4>Project name: Electrical Variables Definition</h4>
+	<p>•Objective: Check and Confirm the Definition of some DP Variables. •Results: First, for ACCESS_CONTROL I verify if the variable is defined as follows: Length: 4, Format: Hexadecimal. Definition: "Access Control($IMSI<H>)(1;4)" (taking the complete IMSI length). Next, I verify sensitive variables: I verify if the sensitive alias (variables) were set as true: (ADMs, Keysets, KI, Master Keys, Milenage Keys, etc). Third, I check variables lengths making sure lengths were set in accordance to ETSI standard.</p>
+	</br>
+	<h4>Project name: LTE Security Data</h4>
+	<p>•Objective: Check on the LTE Security Keys Compliancy. •Results: First, I check if PSK TLS key is present which can be created under Keyset40-4F and assigned in any Key Index. Then, I check its compliancy with GP22. Next, I check if DEK key is present under Keyset40-4F.  The standard defines DEK Keys Index should be plus one TLS PSK Key Index. Finally, I check whether PSK key value can be updated after personalization.</p>
+	</br>
+	<h4>Project name: eSIM, M2M or CE, ODC Profile Activation</h4>
+	<p>•Objective: Validate the full ecosystem’s interoperability, provisioning, authentication, security, and installations for eUICC, SM-DP+ / SM-DS, LPA, and SM-DP / SM-SR for both CE and M2M offerings •Results: In step 1, I ensure an OS (i.e. ISD-R and eCASD) is loaded and a dummy ISD-P profile with only MF 3F00 is created securely at least for the M2M offering as it does not have the LPA feature. In step 2, I analyze different logs to ensure a downloaded profile is initiated by SM-SR / LPA as a request from SM-DP / SM-DP+. Also, I confirm all the ES interfaces are properly working as expected. Upon successful RSP installation, I test that MNO profile (MNO-SD) is available in eUICC. Finally, I evaluate an MNO profile can be managed remotely through OTA.</p>
+		</br>
+	<h4>Project name: Hotspot / Tethering with a SIM</h4>
+	<p>•Objective: Connect to a Hotspot Using a Handset's SIM •Results: First, I ensure an ADF ISIM, including EAP SIM and EAP AKA DFs references, are all present in the card, and ISIM AID is defined in EF DIR. Second, I check that an ISIM file system is personalized with IMPI/IMPU/IMS Domain. Lastly, I simply select Wi-Fi Hotspot from a handset and choose to connect through EAP SIM/AKA.</p>
+		</br>
+	<h4>Project name: 5G Authentication</h4>
+	<p>•Objective: Testing the 5G LTKUP Authentication •Results: First, I check the authentication with 1st key. Second, I send SMS to activate the 2nd key. Third, I check authentication with 2nd key. Finally, I repeat 2 & 3 for all keys.</p>
+		</br>
+	<h4>Project name: 5G SUCI</h4>
+	<p>•Objective: Testing the 5G SUCI computation •Results: First, I enter: MCC, MNC, SUCI type (IMSI or NAI), routing ID, protection scheme Id and Key Identifier. Second, I generate a SUCI (aka APDU Get Identity). Third, I check that all parameters are corrects.</p>
+		</br>
+	<h5><i style="font-size:15px">-more projects and test cases are yet to be written.  Stay tuned!</i></h5>
+		</br>
+		</br>
+		<p>END</P>
+</body>
+</html>

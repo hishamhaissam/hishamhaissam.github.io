@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<title>Hisham BI</title>
+</head>	
+<body>
+	<h1>Business Intelligence Achievements <i style="font-size:15px">-with no order</i></h1>
+	<h2><i style="font-size:15px">key words: </i> BI | AI | DS | ML | NN </h2>
+	</br>
+	<h4>Project name: Customer Segmentation of a Telecom Company With K-Means</h4>
+	<p>•Objective: Partition a Customer-Base into Groups of Individuals That Have Similar Characteristics. •Results: First, a customer-base dataset containing demographic information was loaded via Pandas. The “Address”, a nonnumeric column, was dropped to use the Euclidean distance function. Next, the cleaned dataset was normalized to equally interpret features. After that, fitting with ‘K’=3 clusters was achieved through KMeans from Scikit. Finally, a 3D visual was plotted via Axes3D from mpl_toolkits showing three clusters allowing the creation of a profile for each group, considering the common characteristics of each cluster.</p>
+		</br>
+	<h4>Project name: Customer Churn of a Telecom Company With Logistic Regression</h4>
+	<p>•Objective: Find Out the Subscribers Who Might Leave a Telecom Company and Why. •Results: After reading the dataset using Pandas, it was observed that the target variable is either Churn or no_Chrun. This suggests the utilization of a binary classification technique. After cleaning, preprocessing and normalizing the data, where necessary, the inverse of the regulation strength was chosen for the Binary Classification modeling using LogisticRegression() to solve the overfitting problem. Finally, after splitting, training and testing, the model was evaluated using Jaccard Index, Confusion Matrix and Log Loss.</p>
+		</br>
+	<h4>Project name: A K-Nearest Neighbors (KNN) Algorithm to Classify a Telcom Provider’s Subscribers</h4>
+	<p>•Objective: Classify New Subscribers of a Telcom Provider by Service Usage Patterns Given Demographic Data. •Results: First, the imported dataset was normalized to get zero mean and unit variance as KNN is based on distance of cases. Second, an accuracy plot for different K values was plotted to choose the best K value. Finally, after transformations to Numpy arrays, the model was trained using KNeighborsClassifier() from Scikit-learn.</p>
+		</br>
+	<h4>Project name: Agglomerative Hierarchical Clustering for Cars</h4>
+	<p>•Objective: Use a Clustering Method to Find the Most Distinctive Clusters of Automobiles. •Results: The imported unlabeled dataset of Cars contains features, like engine size and horsepower, for different manufacturers. After cleaning the dataset, the dataset was normalized via MinMaxScaler. Next, using Scipy, the distance matrix, with complete linkage, was calculated. Finally, a dendrogram showing the hierarchical buildup of clusters was plotted via Pylab.</p>
+		</br>
+	<h4>Project name: DBSCAN for a Weather Forecast</h4>
+	<p>•Objective: Cluster a Weather Forecast Dataset Based on Location and Temperature. •Results: A Weather Forecast data frame for different cities in a country was imported via Pandas. After cleaning the data, the latitudes and longitudes in the dataset were projected onto a 2D map using Basemap from mpl_toolkits. Finally, grouping of projected points based on location and mean-temperature in Celsius degrees was achieved using DBSCAN from Scikit.</p>
+		</br>
+	<h4>Project name: A Recommender System for Movies</h4>
+	<p>•Objective: From Given Movies and Their Ratings by a New User, Recommend Movies to the User. •Results: Two datasets were imported via Pandas. One dataset is for movies’ titles and genres. The other one contains ratings of movies by different watchers. First, One Hot Encoding technique was utilized to convert the list of genres to a vector where each column corresponds to one possible value of the feature. Accordingly, my ratings to some movies were weighed. Also, using Pearson Correlation Coefficient, the extent of similarity with other ratings was calculated. Finally, a Recommendation Table for movies was generated to recommend movies to me.</p>
+		</br>
+	<h4>Project name: Anticipating Cancerous Cells via Support Vector Machines (SVM)</h4>
+	<p>•Objective: Diagnose Whether a Cell is Benign or Malignant. •Results: After reading and cleaning the dataset containing information about cells (i.e. Clump, Unit-Size, and Class: Benign or Malignant), via plotting, the features of the dataset were not linearly separable with respect to the target, a reason to use SVM. The kernel function of the SVM algorithm was chosen as Radial Basis Function (RBF). After RBF was fitted using svm.SVC from Scikit, it was evaluated using f1_score and Jaccard Index.</p>
+		</br>
+	<h4>Project name: Patients’ Prescriptions Using Decision Trees</h4>
+	<p>•Objective: Build a Machine Learning Model to Categorize Patients to Different Drugs •Results: The loaded dataset contains categorical variables. To use Decision Trees modeling, categorical variables were converted into numerical-indicator values using pandas.get_dummies(). Next, a DecisionTreeClassifier from Scikit-Learn was trained with 70% of the dataset. Finally, the tree-model was visualized and evaluated using StringIO and metrics.accuracy_score, respectively.</p>
+		</br>
+	<h4>Project name: A Sigmoidal Model to Fit China's GDP</h4>
+	<p>•Objective: Build a ML Model to Predict China’s GDP Given a Year. •Results: After dataset loading with Pandas, China’s GPD in US dollars was plotted against years between 1960 and 2014. The plot resembles a Sigmoid function, a non-Linear curve. Therefore, a sigmoid function was defined using np.exp from Numpy. After that, curve_fit from Scipy was used to train the sigmoid model. Finally, the model was evaluated via MAE and r2_score.</p>
+		</br>
+	<h4>Project name: A Linear Regression Model to Predict Cars’ CO2 Emissions</h4>
+	<p>•Objective: Build a ML Model to Forecast Car’s CO2 Emissions Before Manufacturing. •Results: A Fuel-Consumption dataset with *.CSV extension was imported using Pandas. After data cleansing, through Matplotlib scatter plots, it was found that most numeric-features are in linear correlations with the target. Thus, linear_model.LinearRegression() from Scikit-Learn was used and trained by 80% of the dataset. Afterwards, the coefficients and intercept of a hyperplane were obtained using OLS. Finally, the accuracy, MSE and R2-score were computed for the model.</p>
+		</br>
+	<h4>Project name: Image Recognition Using Neural Networks</h4>
+	<p>•Objective: Building a Neural Network With Different Layers and Activation Functions to Classify Cat Images. •Results: Built neural networks with varying number of hidden layers and activation functions using different Python libraries. Then I generated a plot showing the optimum number of hidden layers to avoid overfitting. The performance and accuracy were calculated and the ML model can easily classify cats’ pictures based on external unstructured data.</p>
+		</br>
+	<h4>Project name: Extract Insights and Build Predictive Models for a Maintenance Department</h4>
+	<p>•Objective: Decreasing the Workload on a Maintenance Department through ML and DS. •Results: A dataset for complaints by tenants was read via Pandas.  WordCloud was generated to show that HEATING is the complaint type with the highest rate.  Next, through Folium, the HEATING complaints were populated as circled dots onto a 2D world-map to reveal the borough with the highest density of HEATING complaint.  Consequently, a second dataset showing the specifications of the apartments in that borough was imported via Pandas.  Insights were provided via histograms showing the correlation between HEATING and houses features.  Finally, Logistic Regression and KNN ML models where designed and tested to forecast HEATING complaints based on an apartment feature.</p>
+		</br>
+		</br>
+		</br>
+		<p>END</P>
+</body>
+</html>
